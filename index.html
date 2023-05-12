@@ -8,7 +8,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5BB8W2X');</script> -->
     <!-- End Google Tag Manager -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
@@ -57,6 +57,23 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 10px;
+    }
+    
+    /* tr:nth-child(even) {
+      background-color: #dddddd;
+    } */
+    </style>
   </head>
 
   <body>
@@ -350,12 +367,39 @@
         <div class="row portfolio-container">
           <div class="col-lg-4 col-md-6 portfolio-item">
             <center>
+              <h4>Recruitment Website</h4>
+              <br />
+            </center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/recruitment-website.jpg"
+                class="img-fluid"
+                alt=""
+                style="height: 220px; width: 100%"
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/recruitment-website.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <center>
               <h4>Customer Behavior</h4>
               <br />
             </center>
             <div class="portfolio-wrap">
               <img
-                src="assets/img/project/consumer-behaviour.jpg"
+                src="assets/img/project/customer-behaviour.jpeg"
                 class="img-fluid"
                 alt=""
                 style="height: 220px; width: 100%"
@@ -444,7 +488,37 @@
         <div class="section-title">
           <h2>Skills</h2>
         </div>
-        <div class="row">
+        <table>
+          <tr bgcolor="#dddddd">
+            <th>Skill</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>for Data Analysis, Machine Learning, Deep Learning, Visualize, Data Mining</td>
+          </tr>
+          <tr>
+            <td>Pyspark</td>
+            <td>Data processing, ETL, ELT</td>
+          </tr>
+          <tr>
+            <td>Big Data</td>
+            <td>Spark, Kafka, Airflow</td>
+          </tr>
+          <tr>
+            <td>Structured Query Languages</td>
+            <td>MySQL, SQL Server</td>
+          </tr>
+          <tr>
+            <td>NoSQL</td>
+            <td>MongoDB, Cassandra DB</td>
+          </tr>
+          <tr>
+            <td>Tools</td>
+            <td>Jupyter Notebook, Power BI, Superset, Github, Docker</td>
+          </tr>
+        </table>
+        <!-- <div class="row">
           <div class="col-lg-12" data-aos="fade-up">
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
@@ -452,8 +526,9 @@
               data-aos-delay="100"
               style="background: #fff"
             >
+          
               <h4 style="text-align: left; color: #09203a">
-                Languages and Databases
+                Languages and Technical Skills
               </h4>
               <p style="text-align: left">
                 <img
@@ -467,23 +542,40 @@
                   alt="Spark"
                 />
                 <img
-                  src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
-                  alt="MongoDB"
-                  height="80"
-                  width="130"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-ar21.svg"
-                  alt="PowerBi"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
-                  alt="MySQL"
-                  height="60"
-                  width="130"
+                  src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg"
+                  alt="Kafka"
                 />
               </p>
             </div>
+            <div class="col-lg-12" data-aos="fade-up">
+              <div
+                class="col-md-12 mt-4 mt-md-0 icon-box"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="background: #fff"
+              >
+                <h4 style="text-align: left; color: #09203a">
+                  Databases
+                </h4>
+                <p style="text-align: left">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"
+                    alt="MongoDB"
+                    height="80"
+                    width="130"
+                  />
+                  <img
+                    src="https://www.vectorlogo.zone/logos/apache_cassandra/apache_cassandra-ar21.svg"
+                    alt="CassandraDB"
+                  />
+                  <img
+                    src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg"
+                    alt="MySQL"
+                    height="60"
+                    width="130"
+                  />
+                </p>
+              </div>
             <div
               class="col-md-12 mt-4 mt-md-0 icon-box"
               data-aos="lefade-up"
@@ -509,6 +601,11 @@
                   alt="Pytorch"
                 />
                 <img
+                  src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg"
+                  alt="Numpy"
+                />
+               
+                <img
                   src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg"
                   alt="vectorlogo.zone"
                   width="150"
@@ -533,24 +630,30 @@
                   src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"
                   alt="vectorlogo.zone"
                 />
-                <!-- <img
-                  src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg"
-                  alt="vectorlogo.zone"
-                />
-                <img
-                  src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg"
-                  alt="vectorlogo.zone"
-                /> -->
                 <img
                   src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg"
                   alt="vectorlogo.zone"
                 />
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h2>Certifications</h2>
+        </div>
+        <table>
+          <tr bgcolor="#dddddd">
+            <th>Names</th>
+            <th>Date</th>
+            <th>Link</th>
+          </tr>
+        </table>
+      </div>
     </section>
+    
 
     <!-- End Skills Section -->
 
@@ -567,13 +670,13 @@
             data-aos-delay="100"
           >
             <a
-              href="https://drive.google.com/file/d/1neIgzg_7VujIKJQufb71zk2_CRuaonR4/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lVzHStyQ3mCCg6BwW3pGUk8sKiIwQhHH/view?usp=sharing"
               target="_blank"
               ><div class="icon"><i class="icofont-page"></i></div
             ></a>
             <h4 class="title">
               <a
-                href="https://drive.google.com/file/d/1neIgzg_7VujIKJQufb71zk2_CRuaonR4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1lVzHStyQ3mCCg6BwW3pGUk8sKiIwQhHH/view?usp=sharing"
                 target="_blank"
                 >Resume</a
               >

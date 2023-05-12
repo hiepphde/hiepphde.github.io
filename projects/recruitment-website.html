@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Customer Behavior</title>
+    <title>Recruitment Website Management</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
@@ -54,16 +54,16 @@
             <div class="col-lg-12 portfolio-info">
               <br />
               <h2 style="color: #12d640">
-                Customer Behavior
+                Recruitment Website Management
               </h2>
               <ul>
                 <li>
-                  <strong>Tech Stack</strong>: Pyspark, SparkSQL, MySQL, Jupyter Notebook
+                  <strong>Tech Stack</strong>: Pyspark, Cassandra DB, MySQL, Jupyter Notebook, Kafka, ETL.
                 </li>
                 <li>
                   <strong>Github URL</strong>:
                   <a
-                    href="https://github.com/hiepphde/customer-behaviours"
+                    href="https://github.com/hiepphde/recruitment-website"
                     target="_blank"
                     >Project Link</a
                   >
@@ -77,23 +77,33 @@
               </ul>
 
               <p style="color: #12d640">
-                Sumary: Analyze customer's television usage behavior data to track customer's trending preferences, thereby building CRM Analytics and Customer360 models.
+                Summary: Collect, process and store data for the recruitment website system. Building data flow to ETL data from the server (Data lake) into Data Warehouse for analysis.
               </p>
               <ul style="text-align: left">
+                <p>
+                  Batch Processing: Data Lake => ETL Scripts => Data Warehouse => Analysis and reporting
+                </p>
                 <li>
-                  Collect, preprocess data from data sources using mysql, pyspark. 
+                  Building data lake contains logs data from server, using Cassandra DB to store logs data. 
                 </li>
                 <li>
-                  Using Pyspark to Data cleaning, Performing Extract , Transform and Load ( ETL) data from data sources then put into data warehouse. 
+                  Use PySpark to connect to Data Lake and then build ETL Flow to put data into Data Warehouse.
                 </li>
                 <li>
-                  Using SQL to query from data warehouse and process data for Analytics & reports to extract insights. 
+                  Data in Data Warehouse will be used to analyze and query for later purposes.
+                </li>
+                <p>
+                  <br>
+                  Stream Processing: Data Lake => ETL Scripts => Kafka Topics => Data Warehouse => Analysis and reporting.
+                </p>
+                <li>
+                  Using Cassandra DB to store logs data.
                 </li>
                 <li>
-                  Performing Data Visualizing and Diagnostic Data Analytics with PowerBI. 
+                  Build ETL Scripts to put data into Kafka sources.
                 </li>
                 <li>
-                  Optimize query to build predictive models using Machine Learning algorithms and Statistics
+                  Config Kafka Sink to automatically push data into MySQL.
                 </li>
               </ul>
             </div>
