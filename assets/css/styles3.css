@@ -120,6 +120,7 @@ h6 {
 #header img {
   padding: 0;
   margin: 0;
+  border-radius: 10px;
 }
 
 #header .social-links {
@@ -221,7 +222,7 @@ h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  right: 10px;
   top: 15px;
   z-index: 9998;
   border: 0;
@@ -242,15 +243,15 @@ h6 {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
-  left: 15px;
+  bottom: auto;
+  left: auto;
   z-index: 9999;
   overflow-y: auto;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(43, 42, 42, 0.7);
   transition: ease-in-out 0s;
   opacity: 0;
   visibility: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px 0;
   border: 2px solid rgba(255, 255, 255, 0.12);
 }
@@ -301,7 +302,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: var(--cool-blue);
+  color: var(--navy-blue);
 }
 
 /* Header Top */
@@ -321,7 +322,8 @@ h6 {
 
 #header.header-top h1 {
   margin-right: auto;
-  font-size: 36px;
+  margin-left: 20px;
+  font-size: 32px;
 }
 
 #header.header-top .container {
@@ -390,11 +392,22 @@ section .container {
 
 .section-title h2::after {
   content: '';
-  width: 120px;
+  width: 150px;
   height: 1px;
   display: inline-block;
   background: var(--navy-blue);
   margin: 4px 10px;
+  margin-inline-start: 10px;
+}
+
+.section-title h2::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  display: inline-block;
+  background: var(--navy-blue);
+  margin: 4px 10px;
+  margin-inline-start: 10px;
 }
 
 .section-title p {
@@ -433,6 +446,10 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.about-me img {
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -518,8 +535,9 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: var(--dark-blue);
+  background: var(--dark-blue );
   transition: ease-in-out 0.3s;
+  border-radius: 15px;
 }
 
 .interests .icon-box i {
@@ -693,9 +711,10 @@ section .container {
 .services .icon-box {
   text-align: center;
   background: var(--dark-blue);
-  padding: 40px 40px;
+  padding: 20px 20px;
   transition: all ease-in-out 0.3s;
   margin: 10px;
+  border-radius: 15px;
 }
 
 .services .icon-box .icon {
@@ -772,7 +791,8 @@ section .container {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .portfolio #portfolio-flters {
@@ -813,8 +833,10 @@ section .container {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(165, 75, 75, 0.6);
+  border-radius: 15px;
 }
+
 
 .portfolio .portfolio-wrap::before {
   content: '';
